@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <EditText
+        android:background="@drawable/bogoc"
+        android:id="@+id/edt_updateName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Chủ đề" />
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="8"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nội dung" />
+
+        <TextView
+            android:drawableStart="@drawable/ic_calendar"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:id="@+id/tv_updateDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ngày: _ /_ /_"
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:lines="19"
+        android:minLines="20"
+        android:maxLines="22"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:hint="Nhập nội dung..."
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bogoc2"
+        android:id="@+id/edt_updateContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginEnd="50dp"
+            android:id="@+id/btn_luu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu" />
+
+        <Button
+            android:id="@+id/btn_xoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/layout_item_product"
+    app:cardCornerRadius="10dp">
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hôm nay là một ngày tuyệt vời đối với tôi và tôi đã lên rất nhiều kế hoạch cho ngày hôm nay của mình. Hi vọng là mọi thứ sẽ diễn ra thật tốt đẹp."/>
+
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center"
+            android:textStyle="italic"
+            android:id="@+id/tv_date"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="24/4/2022"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
